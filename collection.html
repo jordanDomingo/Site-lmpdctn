@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Collection — LMPDCTN</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Découvrez la collection LMPDCTN — pièces urbaines, confort et qualité à prix accessibles.">
+</head>
+<body>
+  <header class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between;width:100%;">
+      <a href="index.html" style="color:inherit;text-decoration:none;font-weight:800">◂ Retour</a>
+      <div style="display:flex;gap:12px;align-items:center;">
+        <button id="cartToggle" aria-label="Ouvrir le panier" style="background:transparent;border:none;color:inherit;cursor:pointer;">Panier <span id="cartCount" style="font-weight:700;margin-left:6px;">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="gallery">
+      <h2 style="margin-top:6px;">La collection</h2>
+      <p style="opacity:0.9;">Sélection de pièces — clique sur un produit pour voir plus de détails.</p>
+      <div class="products" id="productsList" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <!-- Cart drawer -->
+  <aside id="cartDrawer" aria-hidden="true" style="position:fixed;right:0;top:0;height:100%;width:360px;max-width:92vw;background:#111;color:#fff;padding:18px;box-shadow:-20px 0 60px rgba(0,0,0,0.6);transform:translateX(110%);transition:transform 260ms ease,z-index 10;z-index:220;">
+    <button id="closeCart" style="background:transparent;border:none;color:#fff;font-size:20px;float:right;">✕</button>
+    <h3>Panier</h3>
+    <div id="cartContents" style="margin-top:14px;">Votre panier est vide.</div>
+    <div style="margin-top:18px;text-align:right;"><button id="checkoutBtn" class="cta">Valider la commande</button></div>
+  </aside>
+
+  <!-- Product detail modal (hidden by default) -->
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="prodTitle">
+      <button class="modal-close" aria-label="Fermer">×</button>
+      <h2 id="prodTitle"></h2>
+      <div id="prodGallery" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:8px;"></div>
+      <p id="prodDescription" style="margin-top:10px;"></p>
+      <p id="prodPrice" style="font-weight:800;margin-top:4px;"></p>
+      <div style="margin-top:12px;text-align:right;"><button id="prodAdd" class="add-to-cart">Ajouter au panier</button></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

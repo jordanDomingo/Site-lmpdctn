@@ -1,0 +1,38 @@
+[
+  {
+    "id": "p-001",
+    "title": "Hoodie LMPDCTN - Noir",
+    "price": 49.0,
+    "image": "https://picsum.photos/seed/hoodie/800/800",
+    "thumb": "https://picsum.photos/seed/hoodie/400/400",
+    "alt": "Hoodie noir LMPDCTN",
+    "description": "Hoodie coupe confort, tissu doux, logo discret sur la poitrine."
+  },
+  {
+    "id": "p-002",
+    "title": "T‑shirt Oversize - Blanc",
+    "price": 19.5,
+    "image": "https://picsum.photos/seed/tshirt/800/800",
+    "thumb": "https://picsum.photos/seed/tshirt/400/400",
+    "alt": "T-shirt oversize blanc",
+    "description": "T‑shirt 100% coton, coupe oversize pour un look streetwear assuré."
+  },
+  {
+    "id": "p-003",
+    "title": "Casquette LMPDCTN",
+    "price": 15.0,
+    "image": "https://picsum.photos/seed/cap/800/800",
+    "thumb": "https://picsum.photos/seed/cap/400/400",
+    "alt": "Casquette LMPDCTN",
+    "description": "Casquette réglable, broderie ton sur ton."
+  },
+  {
+    "id": "p-004",
+    "title": "Joggers - Anthracite",
+    "price": 39.99,
+    "image": "https://picsum.photos/seed/joggers/800/800",
+    "thumb": "https://picsum.photos/seed/joggers/400/400",
+    "alt": "Joggers anthracite",
+    "description": "Joggers taille élastique, poches zippées, tissu respirant."
+  }
+]
